@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         {
             theRB2D.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, theRB2D.velocity.y);
 
-            theAnimator.SetFloat("Speed", Mathf.Abs )
+            theAnimator.SetFloat("Speed", Mathf.Abs(theRB2D.velocity.x));
         }
     }
 
@@ -83,5 +83,7 @@ public class PlayerController : MonoBehaviour
         {
             airTimeCounter = airTime;
         }
+
+        theAnimator.SetBool("Grounded", grounded);
     }
 }
