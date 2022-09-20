@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
+    public float speed; 
     public float jumpForce;
     private bool canMove;
     private Rigidbody2D theRB2D;
 
     public bool grounded;
-    public LayerMask whatIsgrd;
+    public LayerMask whatIsGrd;
     public Transform grdChecker;
     public float grdCheckerRad;
-    
+
     public float airTime;
     public float airTimeCounter;
 
@@ -31,17 +31,18 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        grounded = Physics2D.OverlapCircle(grdChecker.position, grdCheckerRad, whatIsgrd);
-        MovePlayer();
-        Jump();
+        grounded = Physics2D.OverlapCircle(grdChecker.position, grdCheckerRad, whatIsGrd);
         if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
             canMove = true;
         }
+        MovePlayer();
+        Jump();
     }
 
     private void FixedUpdate()
     {
+        
         
     }
 
@@ -53,11 +54,10 @@ public class PlayerController : MonoBehaviour
 
             theAnimator.SetFloat("Speed", Mathf.Abs(theRB2D.velocity.x));
 
-            if(theRB2D.velocity.x > 0)
-                transform.localScale = new Vector2(1, 1f);
-            else if(theRB2D.velocity.x < 0)
-                transform.localScale = new Vector2(-1f, 1f);
-                
+            if (theRB2D.velocity.x > 0)
+                transform.localScale = new Vector2(1f, 1f);
+            else if (theRB2D.velocity.x < 0)
+                transform.localScale = new Vector2(-1f, 1f);    
         }
     }
 
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.Space) || Input.GetMouseButtonUp(0))
+        if(Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
         {
             airTimeCounter = 0;
         }
