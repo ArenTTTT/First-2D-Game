@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: e2ae1bd74c4b1f44e980235c74696eb7
+guid: 7013c07b64038684fbf0c33c2f74f8dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2430196364501134670
-    second: block
+      213: 3033932581345166258
+    second: still
   - first:
-      213: -5119901937141634695
-    second: spikes
+      213: -7442330872654355743
+    second: jump
   - first:
-      213: -685392480231148913
-    second: flag
+      213: -1341305636777716435
+    second: run1
+  - first:
+      213: 1553071311758147038
+    second: run2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,64 +115,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: block
+      name: still
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 4
+        y: 64
+        width: 56
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2d67f3845364ed0800000000000000
-      internalID: -2430196364501134670
+      spriteID: 2b30097bb91ba1a20800000000000000
+      internalID: 3033932581345166258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spikes
+      name: jump
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 68
+        y: 64
+        width: 56
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 979a6d7805472f8b0800000000000000
-      internalID: -5119901937141634695
+      spriteID: 1e2a382a08787b890800000000000000
+      internalID: -7442330872654355743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flag
+      name: run1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 4
         y: 0
-        width: 64
-        height: 64
+        width: 56
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f82391cab2ffc76f0800000000000000
-      internalID: -685392480231148913
+      spriteID: d2592a041a9b26de0800000000000000
+      internalID: -1341305636777716435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddb138212e9d8510800000000000000
+      internalID: 1553071311758147038
       vertices: []
       indices: 
       edges: []
