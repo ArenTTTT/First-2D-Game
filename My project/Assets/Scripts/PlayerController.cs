@@ -54,11 +54,14 @@ public class PlayerController : MonoBehaviour
 
             theAnimator.SetFloat("Speed", Mathf.Abs(theRB2D.velocity.x));
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             if (theRB2D.velocity.x > 0)
                 transform.localScale = new Vector2(1f, 1f);
             else if (theRB2D.velocity.x < 0)
                 transform.localScale = new Vector2(-1f, 1f);    
+=======
+>>>>>>> parent of 34d8a7e (level creation)
 =======
 >>>>>>> parent of 34d8a7e (level creation)
         }
